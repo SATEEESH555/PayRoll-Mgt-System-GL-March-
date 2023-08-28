@@ -1,5 +1,5 @@
 from flask import Flask, render_template,request
-from employee import Employee
+from employee import Employee,SalaryCalculator
 app = Flask(__name__)
 
 @app.route('/')
@@ -61,9 +61,16 @@ def salarydetails():
     
 @app.route('/payroll/release',methods = ['GET','POST'])
 def payrollrelease():
-    return render_template('empid.html')
+    if request.method=='POST':
+        eid = request.form.get("empid")
+        sal=SalaryCalculator()
+        total_salary=sal.salarycalculation(eid=int(eid))
+        context={"EmployeeId":eid,"TotalSalary":int(total_salary)}
+        return render_template("showsalary.html",data=context)
+    else:
+        return render_template('empid.html')
 
 if __name__=='__main__':
-    app.run()
+    app.run(host='0.0.0.0',port=5050)
 
 

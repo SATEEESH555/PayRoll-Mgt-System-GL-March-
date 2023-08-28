@@ -4,11 +4,12 @@
   <title>My Payroll Management System</title>
   <style>
     body {
-      background-color: #333;
+      background-color: black;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: sans-serif;
       margin: 0;
       padding: 0;
+    
     }
 
     .container {
@@ -21,7 +22,7 @@
       font-size: 36px;
       font-weight: bold;
       margin-bottom: 20px;
-      color: #fff;
+      color: #f98b06;
     }
 
     h2 {
@@ -36,6 +37,7 @@
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.5s, transform 0.5s;
+      text-align: center;
     }
 
     .section:nth-child(odd) {
@@ -47,15 +49,17 @@
     }
 
     .section-title {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      color: lightcoral;
     }
 
     .card {
-      background-color: #444;
+      background-color: #424141;
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s;
+      text-align: center;
     }
 
     .card:hover {
@@ -75,7 +79,7 @@
     }
 
     .card-link {
-      color: #fff;
+      color: rgb(84, 177, 243);
       text-decoration: none;
     }
 
@@ -107,30 +111,30 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="animated fadeInUp">My Payroll Management System</h1>
+    <h1 class="animated fadeInUp" style="text-align: center; font-weight: bold;">My Payroll Management System</h1>
 
     <div class="section animated fadeInUp">
       <h2 class="section-title">Employee Signup</h2>
       <div class="card">
-        <h3 class="card-title">Signup Form</h3>
+        <h2 class="card-title">Signup Form</h2>
         <p class="card-description">Create a new employee account.</p>
         <a href="/employee/signup" class="card-link">Go to Signup</a>
       </div>
     </div>
 
     <div class="section animated fadeInUp">
-      <h2 class="section-title">Attendance</h2>
+      <h2 class="section-title">Attendence</h2>
       <div class="card">
-        <h3 class="card-title">Attendance Tracker</h3>
-        <p class="card-description">Track employee attendance.</p>
-        <a href="/attendance" class="card-link">Go to Attendance</a>
+        <h2 class="card-title">Attendence Tracker</h2>
+        <p class="card-description">Track employee attendence.</p>
+        <a href="/attendance" class="card-link">Go to Attendence</a>
       </div>
     </div>
 
     <div class="section animated fadeInUp">
       <h2 class="section-title">Payroll Release</h2>
       <div class="card">
-        <h3 class="card-title">Payroll Release System</h3>
+        <h2 class="card-title">Payroll Release System</h2>
         <p class="card-description">Release employee payroll.</p>
         <a href="/payroll/release" class="card-link">Go to Payroll Release</a>
       </div>
@@ -139,7 +143,7 @@
     <div class="section animated fadeInUp">
       <h2 class="section-title">Show Employees</h2>
       <div class="card">
-        <h3 class="card-title">Employee List</h3>
+        <h2 class="card-title">Employee List</h2>
         <p class="card-description">View the list of employees.</p>
         <a href="/employees" class="card-link">Go to Show Employees</a>
       </div>
@@ -148,7 +152,7 @@
     <div class="section animated fadeInUp">
       <h2 class="section-title">Salary Details</h2>
       <div class="card">
-        <h3 class="card-title">Salary Information</h3>
+        <h2 class="card-title">Salary Information</h2>
         <p class="card-description">View salary details.</p>
         <a href="/salary/details" class="card-link">Go to Salary Details</a>
       </div>

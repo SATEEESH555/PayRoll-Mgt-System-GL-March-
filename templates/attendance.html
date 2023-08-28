@@ -4,7 +4,7 @@
     <title>Attendance Form</title>
     <style>
         body {
-            background-color: #333;
+            background-color: black;
             color: #fff;
             font-family: Arial, sans-serif;
         }
@@ -12,47 +12,50 @@
         h2 {
             text-align: center;
             padding-top: 20px;
+            color: lightsalmon;
         }
         
         form {
             max-width: 400px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #555;
+            background-color: black;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
         
         label {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
             font-weight: bold;
         }
         
         input[type="text"],
         input[type="datetime-local"] {
             width: 100%;
+            margin-bottom: 10px;
             padding: 10px;
             border: none;
             border-radius: 3px;
-            background-color: #777;
-            color: #fff;
+            background-color: white;
+            color: black;
         }
         
         input[type="date"],
         input[type="time"] {
             width: 100%;
             padding: 10px;
+            margin-bottom: 10px;
             border: none;
             border-radius: 3px;
-            background-color: #777;
-            color: #fff;
+            background-color: white;
+            color: black;
         }
         
         input[type="submit"] {
             margin-top: 20px;
             padding: 10px 15px;
-            background-color: #4CAF50;
+            background-color: #0884f8;
             color: #fff;
             border: none;
             border-radius: 3px;
@@ -69,16 +72,16 @@
     <h2>Attendance Form</h2>
     <form action="/attendance" method="POST">
         <label for="dptid">Department ID:</label>
-        <input type="text" id="dptid" name="dptid" required>
+        <input type="text" id="dptid" name="dptid" placeholder="Enter Department ID" required>
         
         <label for="dptname">Department Name:</label>
-        <input type="text" id="dptname" name="dptname" required>
+        <input type="text" id="dptname" name="dptname" placeholder="Enter Department Name" required>
         
         <label for="eid">Employee ID:</label>
-        <input type="text" id="eid" name="eid" required>
+        <input type="text" id="eid" name="eid" placeholder="Enter Employee ID" required>
         
         <label for="ename">Employee Name:</label>
-        <input type="text" id="ename" name="ename" required>
+        <input type="text" id="ename" name="ename" placeholder="Enter Employee Name" required>
         
         <label for="date">Date:</label>
         <input type="date" id="date" name="date" required>
